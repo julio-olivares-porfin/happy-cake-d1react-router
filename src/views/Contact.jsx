@@ -67,44 +67,50 @@ const Contact = () => {
   }
 
   return (
-    <section className='contacto'>
-      <Container className='mt-4 titulos'>
-        <h1>
-          Celebra como quieras, con la torta que quieras :D
-        </h1>
-      </Container>
-      <Container className='mt-4'>
-      <Row>
-        <Col>
-        <Form onSubmit={handleSubmit} noValidate>
-        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-          <Form.Label>Tu correo electrónico</Form.Label>
-          <Form.Control
-          type='email'
-          id='email'
-          placeholder='usuario@dominio.com'
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          onBlur={handleEmailBlur}
-           />
-           {errors.email && <p className='error'>{errors.email}</p>}
-        </Form.Group>
-        <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-          <Form.Label>Te leemos :D</Form.Label>
-          <Form.Control as="textarea" rows={3}            name='description'
-              id='description'
-              placeholder='Detalla a continuación cualquier aspecto que se te ocurra de la torta que quieres :D'
-              value={description}
-              onChange={(e) => setDescription(e.target.value)}
-              onBlur={handleDescriptionBlur} />
-        </Form.Group>
-      </Form>
-      <Container>
-         <Button variant="secondary" type='submit' className='boton'>Enviar</Button>
-      </Container>
-        </Col>
-      </Row>
-    </Container>
+    <section className='contact-section'>
+      <div className="header-contacto">
+        <Container>
+          <h1 className='titulos'>
+            Apaga las velas <br />
+            en la torta que quieras :D
+          </h1>
+          <p>
+            Rellena el formulario y recibe tu torta
+          </p>
+        </Container>
+      </div>
+      {<Container className='form-container'>
+        <Row>
+          <Col>
+            <Form onSubmit={handleSubmit} noValidate>
+              <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                <Form.Label>Tu correo electrónico</Form.Label>
+                <Form.Control
+                type='email'
+                id='email'
+                placeholder='usuario@dominio.com'
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                onBlur={handleEmailBlur}
+                />
+                {errors.email && <p className='error'>{errors.email}</p>}
+              </Form.Group>
+              <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+                <Form.Label>Te leemos :D</Form.Label>
+                <Form.Control as="textarea" rows={3}            name='description'
+                    id='description'
+                    placeholder='Detalla a continuación cualquier aspecto que se te ocurra de la torta que quieres :D'
+                    value={description}
+                    onChange={(e) => setDescription(e.target.value)}
+                    onBlur={handleDescriptionBlur} />
+              </Form.Group>
+            </Form>
+            <Container>
+              <Button variant="secondary" type='submit' className='boton'>Enviar</Button>
+            </Container>
+          </Col>
+        </Row>
+      </Container>}
     </section>
       );
     }

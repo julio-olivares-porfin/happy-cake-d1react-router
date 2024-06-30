@@ -4,7 +4,7 @@ import logoImg from '../assets/happycake-logo.png'
 
 const Navigation = () => {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" className="navbar-control">
       <Container>
         <Navbar.Brand to='/' as= {Link}>
         <img

@@ -16,29 +16,26 @@ body{
   color: #FFFAFA;
 }
 
-.contacto {
+.contact-section {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  height: 80vh;
+  height: calc(100vh - 100px);
 }
 
 .home-section {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  height: 50vh;
+  height: calc(100vh - 100px);
 }
 
 .titulos {
-  text-align: center;
+  text-align: left;
 }
 
 .button-container {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .boton {
@@ -51,4 +48,37 @@ body{
 .boton:hover {
   background-color: #ae7f72;
   border-color: #ae7f72;
+}
+
+.header {
+  background-image: url(./assets/bg-happycake.jpg);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(100vh - 100px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar-control {
+  background-color: #ffffff;
+  height: 100px;
+}
+
+.header-contacto {
+  background-image: url(./assets/bg-happycake_contacto.jpg);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form-container {
+  margin-top: 80px;
 }
