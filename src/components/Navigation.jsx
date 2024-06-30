@@ -1,17 +1,18 @@
 import { Nav, Navbar, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import logoImg from '../assets/happycake-logo.png'
 
 const Navigation = () => {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand to='/' as={Link}>
-          <img
-            src='../assets/happycake-logo.png'
-            width= '100%'
+        <Navbar.Brand to='/' as= {Link}>
+        <img
+            src={logoImg}
+            width= "50%"
             className="d-inline-block align-top"
-            alt="Happy Cake Logo"
-          />
+            alt="Happy Cake"
+          />{' '}
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
