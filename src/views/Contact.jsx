@@ -68,9 +68,9 @@ const Contact = () => {
 
   return (
     <section className='contacto'>
-      <Container className='mt-4'>
+      <Container className='mt-4 titulos'>
         <h1>
-          Aquí pueden pedirnos tortas para celebrar :D
+          Celebra como quieras, con la torta que quieras :D
         </h1>
       </Container>
       <Container className='mt-4'>
@@ -78,7 +78,7 @@ const Contact = () => {
         <Col>
         <Form onSubmit={handleSubmit} noValidate>
         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-          <Form.Label>Email address</Form.Label>
+          <Form.Label>Tu correo electrónico</Form.Label>
           <Form.Control
           type='email'
           id='email'
@@ -90,17 +90,17 @@ const Contact = () => {
            {errors.email && <p className='error'>{errors.email}</p>}
         </Form.Group>
         <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-          <Form.Label>Example textarea</Form.Label>
+          <Form.Label>Te leemos :D</Form.Label>
           <Form.Control as="textarea" rows={3}            name='description'
               id='description'
-              placeholder='Proporciona más detalles sobre tu solicitud...'
+              placeholder='Detalla a continuación cualquier aspecto que se te ocurra de la torta que quieres :D'
               value={description}
               onChange={(e) => setDescription(e.target.value)}
               onBlur={handleDescriptionBlur} />
         </Form.Group>
       </Form>
       <Container>
-         <Button variant="secondary" type='submit'>Enviar</Button>
+         <Button variant="secondary" type='submit' className='boton'>Enviar</Button>
       </Container>
         </Col>
       </Row>

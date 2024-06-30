@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
   margin: 0;
   padding: 0;
@@ -6,13 +7,12 @@
 }
 
 body{
-  font-family: "Montserrat", sans-serif;
+  font-family: "Work Sans", sans-serif;
   background-color: #FFFAFA;
-  color: #9e7266;
 }
 
 *::selection{
-  background-color: #ae7f72;
+  background-color: #C79C6C;
   color: #FFFAFA;
 }
 
@@ -30,7 +30,7 @@ body{
   height: 50vh;
 }
 
-.titulo-home {
+.titulos {
   text-align: center;
 }
 
@@ -39,4 +39,16 @@ body{
   align-items: center;
   justify-content: center;
   margin-top: 50px;
+}
+
+.boton {
+  color: #ffffff;
+  background-color: #C79C6C;
+  border-color: #ae7f72;
+  border-radius: 0%;
+}
+
+.boton:hover {
+  background-color: #ae7f72;
+  border-color: #ae7f72;
 }

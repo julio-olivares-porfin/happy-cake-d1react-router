@@ -5,12 +5,12 @@ const Home = () => {
   return (
     <section className='home-section'>
       <Container>
-        <h1 className='titulo-home'>
+        <h1 className='titulos'>
           Tortas para celebrar :D
         </h1>
       </Container>
       <Container className='button-container'>
-         <Button as={Link} to='/contact' variant="secondary" type='submit'>Contáctanos</Button>
+         <Button as={Link} to='/contact' variant="secondary" className='boton'>Contáctanos</Button>
       </Container>
     </section>
   )
