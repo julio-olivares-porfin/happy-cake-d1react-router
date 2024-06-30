@@ -7,9 +7,8 @@ const Navigation = () => {
       <Container>
         <Navbar.Brand to='/' as={Link}>
           <img
-            src=''
+            src='../assets/happycake-logo.png'
             width= '100%'
-            height= ''
             className="d-inline-block align-top"
             alt="Happy Cake Logo"
           />
