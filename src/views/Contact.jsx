@@ -78,8 +78,7 @@ const Contact = () => {
             Rellena el formulario y recibe tu torta
           </p>
         </Container>
-      </div>
-      {<Container className='form-container'>
+        {<Container className='form-container'>
         <Row>
           <Col>
             <Form onSubmit={handleSubmit} noValidate>
@@ -111,8 +110,9 @@ const Contact = () => {
           </Col>
         </Row>
       </Container>}
+      </div>
     </section>
-      );
+     );
     }
 
 export default Contact

@@ -73,14 +73,14 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 700px;
+  height: calc(100vh - 67px);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .form-container {
-  margin-top: 20px;
+  padding-top: 40px;
 }
 
 .navbar-color {
