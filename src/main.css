@@ -64,7 +64,7 @@ body{
 
 .navbar-control {
   background-color: #ffffff;
-  height: 100%;
+
 }
 
 .header-contacto {
@@ -73,16 +73,20 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 600px;
+  height: 700px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .form-container {
-  margin-top: 80px;
+  margin-top: 20px;
 }
 
 .navbar-color {
   background-color: #ffffff;
+}
+
+.navbar-brand {
+  width: 250px;
 }
