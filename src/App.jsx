@@ -1,4 +1,4 @@
-import Navbar from './components/Navbar'
+import Navigation from './components/Navigation'
 import Home from './views/Home'
 import Contact from './views/Contact'
 import { Route, Routes } from 'react-router-dom'
@@ -6,7 +6,7 @@ import { Route, Routes } from 'react-router-dom'
 function App () {
   return (
     <>
-      <Navbar />
+      <Navigation />
       <Routes>
         <Route
           path='/'

@@ -15,3 +15,28 @@ body{
   background-color: #4B2E26;
   color: #FFFAFA;
 }
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
+}
+
+.home-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50vh;
+}
+
+.titulo-home {
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
