@@ -19,13 +19,13 @@ body{
 .contact-section {
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 85px);
 }
 
 .home-section {
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 85px);
 }
 
 .titulos {
@@ -56,7 +56,7 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 85px);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
