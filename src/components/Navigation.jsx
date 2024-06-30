@@ -4,8 +4,8 @@ import logoImg from '../assets/happycake-logo.png'
 
 const Navigation = () => {
   return (
-    <Navbar expand="lg" className="navbar-control">
-      <Container>
+    <Navbar expand="lg" className='navbar-color'>
+      <Container className='navbar-control'>
         <Navbar.Brand to='/' as= {Link}>
         <img
             src={logoImg}
@@ -14,7 +14,7 @@ const Navigation = () => {
             alt="Happy Cake"
           />{' '}
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle aria-controls="basic-navbar-nav navbar-toggle" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link to='/' as={Link}>Home</Nav.Link>
